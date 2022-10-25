@@ -22,27 +22,33 @@ console.log("caricata")
 const team = [{
   name: "Wayne Barnett",
   title: "Founder & CEO",
-  photo: "wayne-barnett-founder-ceo.jpg"
+  photo: "wayne-barnett-founder-ceo.jpg",
+  adjectives: "Fun, team-player, loves coffee"
 },{
   name: "Angela Caroll",
   title: "Chief Editor",
-  photo: "angela-caroll-chief-editor.jpg"
+  photo: "angela-caroll-chief-editor.jpg",
+  adjectives: "Don't talk to me before 10AM"
 },{
   name: "Walter Gordon",
   title: "Office Manager",
-  photo: "walter-gordon-office-manager.jpg"
+  photo: "walter-gordon-office-manager.jpg",
+  adjectives: "Love dogs, hates cats, eats whatever"
 }, {
   name: "Angela Lopez",
   title: "Social Media Manager",
-  photo: "angela-lopez-social-media-manager.jpg"
+  photo: "angela-lopez-social-media-manager.jpg",
+  adjectives: "Music player, karaoke legend"
 }, {
   name: "Scott Estrada",
   title: "Developer",
-  photo: "scott-estrada-developer.jpg"
+  photo: "scott-estrada-developer.jpg",
+  adjectives: "I hate company photoshoots"
 }, {
   name: "Barbara Ramos",
   title: "Graphic Designer",
-  photo: "barbara-ramos-graphic-designer.jpg"
+  photo: "barbara-ramos-graphic-designer.jpg",
+  adjectives: "Me too.."
 }
   ];
 
@@ -58,6 +64,7 @@ for(let member of team){
               <div class="card-body">
               <p class="card-text text-center fs-4">${member.name}</p>
               <p class="card-text text-center text-secondary">${member.title}</p>
+              <p class="card-text text-secondary">${member.adjectives}</p>
               </div>
               </div>
               </div>`;
