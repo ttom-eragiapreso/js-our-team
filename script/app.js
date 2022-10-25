@@ -46,9 +46,22 @@ const team = [{
 }
   ];
 
-
+const row = document.getElementById("container-photo")
 for(let member of team){
-  for(let key in member){
-    console.log(`${key} --- ${member[key]}`)
-  }
+
+    let output = "";
+    output += `<div class="col p-3">
+              <div class="card em-card">
+              <div class="overflow-hidden">
+              <img src="our-team/img/${member.photo}" class="card-img-top overflow-hidden" alt="...">
+              </div>
+              <div class="card-body">
+              <p class="card-text text-center fs-4">${member.name}</p>
+              <p class="card-text text-center text-secondary">${member.title}</p>
+              </div>
+              </div>
+              </div>`;
+
+    row.innerHTML += output;
+
 }
